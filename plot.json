@@ -1,0 +1,507 @@
+{
+ "geoms": {
+ "geom1_point_scatter": {
+ "geom": "point",
+"classed": "geom1_point_scatter",
+"aes": {
+ "x": "wt",
+"y": "mpg",
+"colour": "cyl",
+"clickSelects": "cyl",
+"showSelected1": "cyl" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"size":        4,
+"clickSelects": "cyl",
+"showSelected": "cyl",
+"help_clickSelects": "cyl",
+"help_showSelected": "cyl" 
+},
+"types": {
+ "colour": "rgb",
+"x": "numeric",
+"y": "numeric",
+"clickSelects": "factor",
+"showSelected1": "factor",
+"PANEL": "integer",
+"group": "character",
+"fill": "rgb" 
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1" 
+],
+"subset_order": [
+ "showSelected1" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom2_bar_histogram": {
+ "geom": "rect",
+"classed": "geom2_bar_histogram",
+"aes": {
+ "x": "mpg",
+"fill": "cyl",
+"showSelected1": "cyl" 
+},
+"params": {
+ "na.rm": false,
+"bins":       10,
+"na.rm": false,
+"pad": false,
+"alpha":      0.7,
+"showSelected": "cyl",
+"help_showSelected": "cyl" 
+},
+"types": {
+ "fill": "rgb",
+"count": "numeric",
+"xmin": "numeric",
+"xmax": "numeric",
+"density": "numeric",
+"ncount": "numeric",
+"ndensity": "numeric",
+"showSelected1": "factor",
+"PANEL": "integer",
+"group": "character",
+"ymin": "numeric",
+"ymax": "numeric" 
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1" 
+],
+"subset_order": [
+ "showSelected1" 
+],
+"chunks": 1,
+"total": 1 
+} 
+},
+"selectors": {
+ "cyl": {
+ "type": "multiple",
+"legend": true,
+"is.variable.value": false,
+"clickSelects": true,
+"showSelected": true,
+"selected": [ "6", "4", "8" ],
+"levels": [ "6", "4", "8" ],
+"update": [
+ "geom1_point_scatter",
+"geom2_bar_histogram" 
+] 
+} 
+},
+"plots": {
+ "scatter": {
+ "panel_margin_lines":     0.36,
+"legend": {
+ "Cylinders": {
+ "guide": "legend",
+"geoms": "point",
+"title": "Cylinders",
+"class": "cyl",
+"selector": "cyl",
+"is_discrete": true,
+"legend_type": "colour",
+"text_size": "14pt",
+"title_size": "16pt",
+"entries": [
+ {
+ "pointcolour": "#619CFF",
+"pointshape":       19,
+"pointsize":        4,
+"pointstroke":      0.5,
+"label": "8" 
+},
+{
+ "pointcolour": "#00BA38",
+"pointshape":       19,
+"pointsize":        4,
+"pointstroke":      0.5,
+"label": "6" 
+},
+{
+ "pointcolour": "#F8766D",
+"pointshape":       19,
+"pointsize":        4,
+"pointstroke":      0.5,
+"label": "4" 
+} 
+] 
+} 
+},
+"strips": {
+ "top": [
+ "" 
+],
+"right": [
+ "" 
+],
+"n": {
+ "top":        0,
+"right":        0 
+} 
+},
+"layout": {
+ "PANEL": [ 1 ],
+"ROW": [ 1 ],
+"COL": [ 1 ],
+"SCALE_X": [ 1 ],
+"SCALE_Y": [ 1 ],
+"AXIS_X": [ true ],
+"AXIS_Y": [ true ],
+"coord_fixed": [ false ],
+"width_proportion": [        1 ],
+"height_proportion": [        1 ] 
+},
+"panel_background": {
+ "fill": "#FFFFFF",
+"colour": "transparent",
+"size":      0.5,
+"linetype":        1 
+},
+"panel_border": {
+ "fill": "transparent",
+"colour": "#7F7F7F",
+"size":      0.5,
+"linetype":        1 
+},
+"grid_major": {
+ "colour": "#E5E5E5",
+"size":      0.2,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+        2,
+       3,
+       4,
+       5 
+] 
+],
+"y": [
+ [
+       10,
+      15,
+      20,
+      25,
+      30,
+      35 
+] 
+] 
+} 
+},
+"grid_minor": {
+ "colour": "#FAFAFA",
+"size":      0.5,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+      1.5,
+       2,
+     2.5,
+       3,
+     3.5,
+       4,
+     4.5,
+       5,
+     5.5 
+] 
+],
+"y": [
+ [
+       10,
+    12.5,
+      15,
+    17.5,
+      20,
+    22.5,
+      25,
+    27.5,
+      30,
+    32.5,
+      35 
+] 
+] 
+} 
+},
+"axis1": {
+ "x": [
+        2,
+       3,
+       4,
+       5 
+],
+"xlab": [
+ "2",
+"3",
+"4",
+"5" 
+],
+"xrange": [  1.31745,  5.61955 ],
+"xline": false,
+"xticks": true,
+"y": [
+       10,
+      15,
+      20,
+      25,
+      30,
+      35 
+],
+"ylab": [
+ "10",
+"15",
+"20",
+"25",
+"30",
+"35" 
+],
+"yrange": [    9.225,   35.075 ],
+"yline": false,
+"yticks": true 
+},
+"xtitle": "Weight",
+"strip_text_xsize": "16pt",
+"xsize": "14pt",
+"xangle":        0,
+"xanchor": "middle",
+"ytitle": "Miles per Gallon",
+"strip_text_ysize": "16pt",
+"ysize": "14pt",
+"yangle":        0,
+"yanchor": "end",
+"xlabs": [
+ "2",
+"3",
+"4",
+"5" 
+],
+"ylabs": [
+ "10",
+"15",
+"20",
+"25",
+"30",
+"35" 
+],
+"title": "MPG vs Weight by Cylinder",
+"title_size": "20pt",
+"options": {
+ "width":      400,
+"height":      400 
+},
+"span": {
+ "rowspan": null,
+"colspan": null,
+"last_in_row": null 
+},
+"geoms": [
+ "geom1_point_scatter" 
+] 
+},
+"histogram": {
+ "panel_margin_lines":     0.36,
+"legend": {
+ "Cylinders": {
+ "guide": "legend",
+"geoms": "polygon",
+"title": "Cylinders",
+"class": "cyl",
+"selector": "cyl",
+"is_discrete": true,
+"legend_type": "fill",
+"text_size": "14pt",
+"title_size": "16pt",
+"entries": [
+ {
+ "polygonfill": "#619CFF",
+"polygonsize":      0.5,
+"polygonlinetype":        1,
+"polygonalpha":      0.7,
+"label": "8" 
+},
+{
+ "polygonfill": "#00BA38",
+"polygonsize":      0.5,
+"polygonlinetype":        1,
+"polygonalpha":      0.7,
+"label": "6" 
+},
+{
+ "polygonfill": "#F8766D",
+"polygonsize":      0.5,
+"polygonlinetype":        1,
+"polygonalpha":      0.7,
+"label": "4" 
+} 
+] 
+} 
+},
+"strips": {
+ "top": [
+ "" 
+],
+"right": [
+ "" 
+],
+"n": {
+ "top":        0,
+"right":        0 
+} 
+},
+"layout": {
+ "PANEL": [ 1 ],
+"ROW": [ 1 ],
+"COL": [ 1 ],
+"SCALE_X": [ 1 ],
+"SCALE_Y": [ 1 ],
+"AXIS_X": [ true ],
+"AXIS_Y": [ true ],
+"coord_fixed": [ false ],
+"width_proportion": [        1 ],
+"height_proportion": [        1 ] 
+},
+"panel_background": {
+ "fill": "#FFFFFF",
+"colour": "transparent",
+"size":      0.5,
+"linetype":        1 
+},
+"panel_border": {
+ "fill": "transparent",
+"colour": "#7F7F7F",
+"size":      0.5,
+"linetype":        1 
+},
+"grid_major": {
+ "colour": "#E5E5E5",
+"size":      0.2,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+       10,
+      20,
+      30 
+] 
+],
+"y": [
+ [
+        0,
+       2,
+       4,
+       6 
+] 
+] 
+} 
+},
+"grid_minor": {
+ "colour": "#FAFAFA",
+"size":      0.5,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+       10,
+      15,
+      20,
+      25,
+      30,
+      35 
+] 
+],
+"y": [
+ [
+        0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7 
+] 
+] 
+} 
+},
+"axis1": {
+ "x": [
+       10,
+      20,
+      30 
+],
+"xlab": [
+ "10",
+"20",
+"30" 
+],
+"xrange": [ 7.833333, 36.55556 ],
+"xline": false,
+"xticks": true,
+"y": [
+        0,
+       2,
+       4,
+       6 
+],
+"ylab": [
+ "0",
+"2",
+"4",
+"6" 
+],
+"yrange": [    -0.35,     7.35 ],
+"yline": false,
+"yticks": true 
+},
+"xtitle": "Miles per Gallon",
+"strip_text_xsize": "16pt",
+"xsize": "14pt",
+"xangle":        0,
+"xanchor": "middle",
+"ytitle": "Count",
+"strip_text_ysize": "16pt",
+"ysize": "14pt",
+"yangle":        0,
+"yanchor": "end",
+"xlabs": [
+ "10",
+"20",
+"30" 
+],
+"ylabs": [
+ "0",
+"2",
+"4",
+"6" 
+],
+"title": "Distribution of MPG",
+"title_size": "20pt",
+"options": {
+ "width":      400,
+"height":      400 
+},
+"span": {
+ "rowspan": null,
+"colspan": null,
+"last_in_row": null 
+},
+"geoms": [
+ "geom2_bar_histogram" 
+] 
+} 
+},
+"source": "https://github.com/ashishtiwari03/animint2-tests",
+"title": "Linked mtcars visualization (Easy Test)" 
+}
