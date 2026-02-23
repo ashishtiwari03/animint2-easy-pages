@@ -304,18 +304,18 @@
 ] 
 },
 "histogram": {
- "panel_margin_lines":     0.36,
+ "panel_margin_lines":     0.25,
 "legend": {
- "Cylinders": {
+ "cyl": {
  "guide": "legend",
 "geoms": "polygon",
-"title": "Cylinders",
+"title": "cyl",
 "class": "cyl",
 "selector": "cyl",
 "is_discrete": true,
 "legend_type": "fill",
-"text_size": "14pt",
-"title_size": "16pt",
+"text_size": "8.8pt",
+"title_size": "11pt",
 "entries": [
  {
  "polygonfill": "#619CFF",
@@ -366,20 +366,15 @@
 "height_proportion": [        1 ] 
 },
 "panel_background": {
- "fill": "#FFFFFF",
+ "fill": "#EBEBEB",
 "colour": "transparent",
 "size":      0.5,
 "linetype":        1 
 },
-"panel_border": {
- "fill": "transparent",
-"colour": "#7F7F7F",
-"size":      0.5,
-"linetype":        1 
-},
+"panel_border": [],
 "grid_major": {
- "colour": "#E5E5E5",
-"size":      0.2,
+ "colour": "#FFFFFF",
+"size":      0.5,
 "linetype":        1,
 "lineend": "butt",
 "loc": {
@@ -408,8 +403,8 @@
 } 
 },
 "grid_minor": {
- "colour": "#FAFAFA",
-"size":      0.5,
+ "colour": "#FFFFFF",
+"size":     0.25,
 "linetype":        1,
 "lineend": "butt",
 "loc": {
@@ -465,19 +460,19 @@
       10 
 ],
 "xlab": [
- "1",
-"2",
-"3",
-"4",
-"5",
-"6",
-"7",
-"8",
-"9",
-"10" 
+     10.4,
+      13,
+    15.6,
+    18.2,
+    20.8,
+    23.5,
+    26.1,
+    28.7,
+    31.3,
+    33.9 
 ],
 "xrange": [    0.055,   10.945 ],
-"xline": false,
+"xline": true,
 "xticks": true,
 "y": [
         0,
@@ -492,30 +487,30 @@
 "6" 
 ],
 "yrange": [     -0.3,      6.3 ],
-"yline": false,
+"yline": true,
 "yticks": true 
 },
-"xtitle": "MPG Bin",
-"strip_text_xsize": "16pt",
-"xsize": "14pt",
+"xtitle": "bin_mid",
+"strip_text_xsize": "11pt",
+"xsize": "11pt",
 "xangle":        0,
 "xanchor": "middle",
-"ytitle": "Count",
-"strip_text_ysize": "16pt",
-"ysize": "14pt",
+"ytitle": "count",
+"strip_text_ysize": "11pt",
+"ysize": "11pt",
 "yangle":        0,
 "yanchor": "end",
 "xlabs": [
- "1",
-"2",
-"3",
-"4",
-"5",
-"6",
-"7",
-"8",
-"9",
-"10" 
+     10.4,
+      13,
+    15.6,
+    18.2,
+    20.8,
+    23.5,
+    26.1,
+    28.7,
+    31.3,
+    33.9 
 ],
 "ylabs": [
  "0",
@@ -523,8 +518,7 @@
 "4",
 "6" 
 ],
-"title": "Distribution of MPG",
-"title_size": "20pt",
+"title_size": "13.2pt",
 "options": {
  "width":      400,
 "height":      400 
