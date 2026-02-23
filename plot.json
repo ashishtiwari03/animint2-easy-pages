@@ -13,7 +13,7 @@
 "params": {
  "na.rm": false,
 "na.rm": false,
-"size":        4,
+"size":        5,
 "clickSelects": "cyl",
 "showSelected": "cyl",
 "help_clickSelects": "cyl",
@@ -39,11 +39,11 @@
 "chunks": 1,
 "total": 1 
 },
-"geom2_bar_histogram": {
+"geom2_bar_bars": {
  "geom": "rect",
-"classed": "geom2_bar_histogram",
+"classed": "geom2_bar_bars",
 "aes": {
- "x": "bin_mid",
+ "x": "mpg_bin",
 "y": "count",
 "fill": "cyl",
 "showSelected1": "cyl" 
@@ -51,7 +51,7 @@
 "params": {
  "na.rm": false,
 "na.rm": false,
-"alpha":      0.7,
+"alpha":      0.8,
 "showSelected": "cyl",
 "help_showSelected": "cyl" 
 },
@@ -87,13 +87,13 @@
 "levels": [ "6", "4", "8" ],
 "update": [
  "geom1_point_scatter",
-"geom2_bar_histogram" 
+"geom2_bar_bars" 
 ] 
 } 
 },
 "plots": {
  "scatter": {
- "panel_margin_lines":     0.36,
+ "panel_margin_lines":     0.41,
 "legend": {
  "Cylinders": {
  "guide": "legend",
@@ -103,27 +103,27 @@
 "selector": "cyl",
 "is_discrete": true,
 "legend_type": "colour",
-"text_size": "14pt",
-"title_size": "16pt",
+"text_size": "16pt",
+"title_size": "18pt",
 "entries": [
  {
  "pointcolour": "#619CFF",
 "pointshape":       19,
-"pointsize":        4,
+"pointsize":        5,
 "pointstroke":      0.5,
 "label": "8" 
 },
 {
  "pointcolour": "#00BA38",
 "pointshape":       19,
-"pointsize":        4,
+"pointsize":        5,
 "pointstroke":      0.5,
 "label": "6" 
 },
 {
  "pointcolour": "#F8766D",
 "pointshape":       19,
-"pointsize":        4,
+"pointsize":        5,
 "pointstroke":      0.5,
 "label": "4" 
 } 
@@ -265,13 +265,13 @@
 "yticks": true 
 },
 "xtitle": "Weight",
-"strip_text_xsize": "16pt",
-"xsize": "14pt",
+"strip_text_xsize": "18pt",
+"xsize": "16pt",
 "xangle":        0,
 "xanchor": "middle",
 "ytitle": "Miles per Gallon",
-"strip_text_ysize": "16pt",
-"ysize": "14pt",
+"strip_text_ysize": "18pt",
+"ysize": "16pt",
 "yangle":        0,
 "yanchor": "end",
 "xlabs": [
@@ -289,7 +289,7 @@
 "35" 
 ],
 "title": "MPG vs Weight by Cylinder",
-"title_size": "20pt",
+"title_size": "22pt",
 "options": {
  "width":      400,
 "height":      400 
@@ -303,39 +303,39 @@
  "geom1_point_scatter" 
 ] 
 },
-"histogram": {
- "panel_margin_lines":     0.25,
+"bars": {
+ "panel_margin_lines":     0.41,
 "legend": {
- "cyl": {
+ "Cylinders": {
  "guide": "legend",
 "geoms": "polygon",
-"title": "cyl",
+"title": "Cylinders",
 "class": "cyl",
 "selector": "cyl",
 "is_discrete": true,
 "legend_type": "fill",
-"text_size": "8.8pt",
-"title_size": "11pt",
+"text_size": "16pt",
+"title_size": "18pt",
 "entries": [
  {
  "polygonfill": "#619CFF",
 "polygonsize":      0.5,
 "polygonlinetype":        1,
-"polygonalpha":      0.7,
+"polygonalpha":      0.8,
 "label": "8" 
 },
 {
  "polygonfill": "#00BA38",
 "polygonsize":      0.5,
 "polygonlinetype":        1,
-"polygonalpha":      0.7,
+"polygonalpha":      0.8,
 "label": "6" 
 },
 {
  "polygonfill": "#F8766D",
 "polygonsize":      0.5,
 "polygonlinetype":        1,
-"polygonalpha":      0.7,
+"polygonalpha":      0.8,
 "label": "4" 
 } 
 ] 
@@ -366,30 +366,29 @@
 "height_proportion": [        1 ] 
 },
 "panel_background": {
- "fill": "#EBEBEB",
+ "fill": "#FFFFFF",
 "colour": "transparent",
 "size":      0.5,
 "linetype":        1 
 },
-"panel_border": [],
-"grid_major": {
- "colour": "#FFFFFF",
+"panel_border": {
+ "fill": "transparent",
+"colour": "#7F7F7F",
 "size":      0.5,
+"linetype":        1 
+},
+"grid_major": {
+ "colour": "#E5E5E5",
+"size":      0.2,
 "linetype":        1,
 "lineend": "butt",
 "loc": {
  "x": [
  [
-        1,
-       2,
-       3,
-       4,
-       5,
-       6,
-       7,
-       8,
-       9,
-      10 
+ 1,
+2,
+3,
+4 
 ] 
 ],
 "y": [
@@ -397,41 +396,20 @@
         0,
        2,
        4,
-       6 
+       6,
+       8 
 ] 
 ] 
 } 
 },
 "grid_minor": {
- "colour": "#FFFFFF",
-"size":     0.25,
+ "colour": "#FAFAFA",
+"size":      0.5,
 "linetype":        1,
 "lineend": "butt",
 "loc": {
  "x": [
- [
-      0.5,
-       1,
-     1.5,
-       2,
-     2.5,
-       3,
-     3.5,
-       4,
-     4.5,
-       5,
-     5.5,
-       6,
-     6.5,
-       7,
-     7.5,
-       8,
-     8.5,
-       9,
-     9.5,
-      10,
-    10.5 
-] 
+ [] 
 ],
 "y": [
  [
@@ -441,84 +419,72 @@
        3,
        4,
        5,
-       6 
+       6,
+       7,
+       8 
 ] 
 ] 
 } 
 },
 "axis1": {
  "x": [
-        1,
-       2,
-       3,
-       4,
-       5,
-       6,
-       7,
-       8,
-       9,
-      10 
+ 1,
+2,
+3,
+4 
 ],
 "xlab": [
-     10.4,
-      13,
-    15.6,
-    18.2,
-    20.8,
-    23.5,
-    26.1,
-    28.7,
-    31.3,
-    33.9 
+ "[10,15]",
+"(15,20]",
+"(20,25]",
+"(25,30]" 
 ],
-"xrange": [    0.055,   10.945 ],
-"xline": true,
+"xrange": [      0.4,      4.6 ],
+"xline": false,
 "xticks": true,
 "y": [
         0,
        2,
        4,
-       6 
+       6,
+       8 
 ],
 "ylab": [
  "0",
 "2",
 "4",
-"6" 
+"6",
+"8" 
 ],
-"yrange": [     -0.3,      6.3 ],
-"yline": true,
+"yrange": [     -0.4,      8.4 ],
+"yline": false,
 "yticks": true 
 },
-"xtitle": "bin_mid",
-"strip_text_xsize": "11pt",
-"xsize": "11pt",
-"xangle":        0,
-"xanchor": "middle",
-"ytitle": "count",
-"strip_text_ysize": "11pt",
-"ysize": "11pt",
+"xtitle": "MPG Range",
+"strip_text_xsize": "18pt",
+"xsize": "16pt",
+"xangle":      -45,
+"xanchor": "end",
+"ytitle": "Count",
+"strip_text_ysize": "18pt",
+"ysize": "16pt",
 "yangle":        0,
 "yanchor": "end",
 "xlabs": [
-     10.4,
-      13,
-    15.6,
-    18.2,
-    20.8,
-    23.5,
-    26.1,
-    28.7,
-    31.3,
-    33.9 
+ "[10,15]",
+"(15,20]",
+"(20,25]",
+"(25,30]" 
 ],
 "ylabs": [
  "0",
 "2",
 "4",
-"6" 
+"6",
+"8" 
 ],
-"title_size": "13.2pt",
+"title": "MPG Distribution by Cylinder",
+"title_size": "22pt",
 "options": {
  "width":      400,
 "height":      400 
@@ -529,10 +495,10 @@
 "last_in_row": null 
 },
 "geoms": [
- "geom2_bar_histogram" 
+ "geom2_bar_bars" 
 ] 
 } 
 },
 "source": "https://github.com/ashishtiwari03/animint2-tests",
-"title": "Linked mtcars visualization (Easy Test)" 
+"title": "Linked mtcars Visualization (Easy Test)" 
 }
