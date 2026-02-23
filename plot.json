@@ -43,32 +43,27 @@
  "geom": "rect",
 "classed": "geom2_bar_histogram",
 "aes": {
- "x": "mpg",
+ "x": "bin_mid",
+"y": "count",
 "fill": "cyl",
 "showSelected1": "cyl" 
 },
 "params": {
  "na.rm": false,
-"bins":       10,
 "na.rm": false,
-"pad": false,
 "alpha":      0.7,
 "showSelected": "cyl",
 "help_showSelected": "cyl" 
 },
 "types": {
  "fill": "rgb",
-"count": "numeric",
-"xmin": "numeric",
-"xmax": "numeric",
-"density": "numeric",
-"ncount": "numeric",
-"ndensity": "numeric",
 "showSelected1": "factor",
 "PANEL": "integer",
 "group": "character",
 "ymin": "numeric",
-"ymax": "numeric" 
+"ymax": "numeric",
+"xmin": "numeric",
+"xmax": "numeric" 
 },
 "chunk_order": [],
 "nest_order": [
@@ -390,9 +385,16 @@
 "loc": {
  "x": [
  [
-       10,
-      20,
-      30 
+        1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+      10 
 ] 
 ],
 "y": [
@@ -413,12 +415,27 @@
 "loc": {
  "x": [
  [
-       10,
-      15,
-      20,
-      25,
-      30,
-      35 
+      0.5,
+       1,
+     1.5,
+       2,
+     2.5,
+       3,
+     3.5,
+       4,
+     4.5,
+       5,
+     5.5,
+       6,
+     6.5,
+       7,
+     7.5,
+       8,
+     8.5,
+       9,
+     9.5,
+      10,
+    10.5 
 ] 
 ],
 "y": [
@@ -429,24 +446,37 @@
        3,
        4,
        5,
-       6,
-       7 
+       6 
 ] 
 ] 
 } 
 },
 "axis1": {
  "x": [
-       10,
-      20,
-      30 
+        1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+      10 
 ],
 "xlab": [
- "10",
-"20",
-"30" 
+ "1",
+"2",
+"3",
+"4",
+"5",
+"6",
+"7",
+"8",
+"9",
+"10" 
 ],
-"xrange": [ 7.833333, 36.55556 ],
+"xrange": [    0.055,   10.945 ],
 "xline": false,
 "xticks": true,
 "y": [
@@ -461,11 +491,11 @@
 "4",
 "6" 
 ],
-"yrange": [    -0.35,     7.35 ],
+"yrange": [     -0.3,      6.3 ],
 "yline": false,
 "yticks": true 
 },
-"xtitle": "Miles per Gallon",
+"xtitle": "MPG Bin",
 "strip_text_xsize": "16pt",
 "xsize": "14pt",
 "xangle":        0,
@@ -476,9 +506,16 @@
 "yangle":        0,
 "yanchor": "end",
 "xlabs": [
- "10",
-"20",
-"30" 
+ "1",
+"2",
+"3",
+"4",
+"5",
+"6",
+"7",
+"8",
+"9",
+"10" 
 ],
 "ylabs": [
  "0",
