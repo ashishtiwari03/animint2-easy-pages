@@ -51,7 +51,7 @@
 "params": {
  "na.rm": false,
 "na.rm": false,
-"alpha":      0.8,
+"alpha":     0.85,
 "showSelected": "cyl",
 "help_showSelected": "cyl" 
 },
@@ -321,21 +321,21 @@
  "polygonfill": "#619CFF",
 "polygonsize":      0.5,
 "polygonlinetype":        1,
-"polygonalpha":      0.8,
+"polygonalpha":     0.85,
 "label": "8" 
 },
 {
  "polygonfill": "#00BA38",
 "polygonsize":      0.5,
 "polygonlinetype":        1,
-"polygonalpha":      0.8,
+"polygonalpha":     0.85,
 "label": "6" 
 },
 {
  "polygonfill": "#F8766D",
 "polygonsize":      0.5,
 "polygonlinetype":        1,
-"polygonalpha":      0.8,
+"polygonalpha":     0.85,
 "label": "4" 
 } 
 ] 
@@ -394,10 +394,11 @@
 "y": [
  [
         0,
-       2,
-       4,
-       6,
-       8 
+     2.5,
+       5,
+     7.5,
+      10,
+    12.5 
 ] 
 ] 
 } 
@@ -414,14 +415,16 @@
 "y": [
  [
         0,
-       1,
-       2,
-       3,
-       4,
+    1.25,
+     2.5,
+    3.75,
        5,
-       6,
-       7,
-       8 
+    6.25,
+     7.5,
+    8.75,
+      10,
+   11.25,
+    12.5 
 ] 
 ] 
 } 
@@ -444,19 +447,21 @@
 "xticks": true,
 "y": [
         0,
-       2,
-       4,
-       6,
-       8 
+     2.5,
+       5,
+     7.5,
+      10,
+    12.5 
 ],
 "ylab": [
- "0",
-"2",
-"4",
-"6",
-"8" 
+ "0.0",
+"2.5",
+"5.0",
+"7.5",
+"10.0",
+"12.5" 
 ],
-"yrange": [     -0.4,      8.4 ],
+"yrange": [     -0.6,     12.6 ],
 "yline": false,
 "yticks": true 
 },
@@ -477,11 +482,12 @@
 "(25,30]" 
 ],
 "ylabs": [
- "0",
-"2",
-"4",
-"6",
-"8" 
+ "0.0",
+"2.5",
+"5.0",
+"7.5",
+"10.0",
+"12.5" 
 ],
 "title": "MPG Distribution by Cylinder",
 "title_size": "22pt",
