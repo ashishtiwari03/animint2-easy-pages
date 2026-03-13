@@ -49,10 +49,10 @@
 "showSelected1": "cyl" 
 },
 "params": {
- "na.rm": false,
+ "width":      0.8,
 "na.rm": false,
-"alpha":      0.6,
-"colour": "#000000",
+"na.rm": false,
+"alpha":     0.85,
 "showSelected": "cyl",
 "help_showSelected": "cyl" 
 },
@@ -84,7 +84,7 @@
 "is.variable.value": false,
 "clickSelects": true,
 "showSelected": true,
-"selected": [ "6", "4", "8" ],
+"selected": "4",
 "levels": [ "6", "4", "8" ],
 "update": [
  "geom1_point_scatter",
@@ -320,26 +320,23 @@
 "entries": [
  {
  "polygonfill": "#619CFF",
-"polygoncolour": "#000000",
 "polygonsize":      0.5,
 "polygonlinetype":        1,
-"polygonalpha":      0.6,
+"polygonalpha":     0.85,
 "label": "8" 
 },
 {
  "polygonfill": "#00BA38",
-"polygoncolour": "#000000",
 "polygonsize":      0.5,
 "polygonlinetype":        1,
-"polygonalpha":      0.6,
+"polygonalpha":     0.85,
 "label": "6" 
 },
 {
  "polygonfill": "#F8766D",
-"polygoncolour": "#000000",
 "polygonsize":      0.5,
 "polygonlinetype":        1,
-"polygonalpha":      0.6,
+"polygonalpha":     0.85,
 "label": "4" 
 } 
 ] 
