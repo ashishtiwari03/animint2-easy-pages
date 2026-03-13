@@ -49,8 +49,7 @@
 "showSelected1": "cyl" 
 },
 "params": {
- "width":      0.8,
-"na.rm": false,
+ "na.rm": false,
 "na.rm": false,
 "alpha":     0.85,
 "showSelected": "cyl",
@@ -84,7 +83,7 @@
 "is.variable.value": false,
 "clickSelects": true,
 "showSelected": true,
-"selected": "4",
+"selected": [ "4", "6", "8" ],
 "levels": [ "6", "4", "8" ],
 "update": [
  "geom1_point_scatter",
